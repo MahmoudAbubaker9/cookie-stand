@@ -48,7 +48,7 @@ const Seattle = {
 }
 Seattle.generatecust(),
 Seattle.render()
-// // --------------------------------------
+// // ------------------------------------
 
 const tokyo  = {
     locationName:'tokyo',
