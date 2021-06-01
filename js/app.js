@@ -37,7 +37,8 @@ function Branch(locationName,minCust,maxCust,avgCookies){
     this.custHour =  0,
     this.totalRep = 0,
     this.multy=[];
-    this.sumval = 0
+    this.sumval = 0,
+    this.totalofT= 0,
     arrStore.push(this)
     
 }
@@ -89,10 +90,16 @@ Branch.prototype.resultfunc = function(){
         for( let q=0 ; q < arrStore.length ; q++){
         valSum = valSum + arrStore[q].multy[y]
     }
+    this.totalofT +=
     td.textContent=valSum
     }
     
-}
+    let td12 = document.createElement('td')
+    row3.appendChild(td12)
+    td12.textContent= this.totalofT
+
+},
+
 
 
 timeList()
