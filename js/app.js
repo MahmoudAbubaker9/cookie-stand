@@ -128,6 +128,8 @@ function inputFunction(event){
     console.log(event.target.avgInput.value);
     let inputData = new Branch (nameForm,minForm,maxForm,avgForm)
 
+    table.deleteRow(table.rows.length-1);
+
     inputData.custnumber()
     inputData.render()
 
