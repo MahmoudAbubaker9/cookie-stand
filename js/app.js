@@ -120,11 +120,11 @@ function inputFunction(event){
     event.preventDefault()
     let nameForm = event.target.nameInput.value
     console.log(event.target.nameInput.value);
-    let minForm = event.target.minInput.value
+    let minForm = Number(event.target.minInput.value);
     console.log(event.target.minInput.value);
-    let maxForm = event.target.maxInput.value
+    let maxForm = Number(event.target.maxInput.value)
     console.log(event.target.maxInput.value);
-    let avgForm = event.target.avgInput.value
+    let avgForm = Number(event.target.avgInput.value)
     console.log(event.target.avgInput.value);
     let inputData = new Branch (nameForm,minForm,maxForm,avgForm)
 
